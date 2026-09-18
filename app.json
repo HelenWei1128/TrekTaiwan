@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "TrekTaiwan",
+    "slug": "TrekTaiwan",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "trektaiwan",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "tw.trektaiwan.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TrekTaiwan 需要定位權限以顯示您在地圖上的位置，並記錄健行時的 GPS 路徑。"
+      }
+    },
+    "android": {
+      "package": "tw.trektaiwan.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+      "config": {
+        "googleMaps": {
+          "apiKey": "REPLACE_WITH_YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "TrekTaiwan 需要定位權限以顯示您在地圖上的位置，並記錄健行時的 GPS 路徑。"
+        }
+      ]
+    ]
+  }
+}
