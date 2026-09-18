@@ -43,6 +43,15 @@ npm install
 npx expo start
 ```
 
+Or just double-click the launcher for your OS in this folder:
+
+- **macOS** — `start-app.command`
+- **Windows** — `start-app.bat`
+
+Either one installs dependencies on first run and starts the dev server,
+then shows a QR code — scan it with the **Expo Go** app on your phone to
+open TrekTaiwan.
+
 Run on a device with the Expo Go app, or `npm run ios` / `npm run android`
 with a configured native toolchain. Location permission is required for the
 map's "my location" and the GPS recording feature.
